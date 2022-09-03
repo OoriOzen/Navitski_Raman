@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>Перед скриптом</p>
+
+  <script>
+    let a = +prompt('a=', 5); 
+    let b = +prompt('b=', 1); 
+    let c;
+
+    //c=a;
+    //a=b;
+    //b=c;
+a=a+b;
+b=a-b;
+a=a-b;
+
+    alert( `a=,${a},b=,${b}`);
+  </script>
+
+  <p>После скрипта</p>
+
+</body>
+
+</html>
