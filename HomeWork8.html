@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      /*Дана строка. Вывести первые три символа и последние три символа, если длина строки больше 5. Иначе вывести сообщение “false”
+       */
+
+      let str;
+      str = prompt("Введите строку", "Строка");
+      if (str.length <= 5) {
+        console.log("False");
+      } else {
+        console.log(str.substr(0, 3) + str.substr(str.length - 3));
+      }
+    </script>
+  </body>
+</html>

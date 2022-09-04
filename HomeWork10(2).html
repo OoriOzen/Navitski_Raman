@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      /*Дана сторона квадрата (a - вводит пользователь).  
+      Вывести площадь и периметр квадрата. 
+      Обязательно предусмотреть ввод некорректных данных
+       */
+
+      let a, b;
+      a = prompt("Введите длинну стороны квадрата", 5);
+      b = a;
+      a = Number(a);
+
+      if (a) {
+        switch (true) {
+          case a >= 0:
+            console.log("Периметр = " + 4 * a);
+            console.log("Площадь = " + a ** 2);
+            break;
+          case a < 0:
+            console.log("Некорректные данные");
+            break;
+        }
+      } else {
+        console.log("Периметр =  4 * " + b);
+        console.log("Площадь = " + b + "^2");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      /*Найти в строке указанную подстроку и заменить ее на новую. Строку, подстроку для замены и новую подстроку вводит пользователь.
+       */
+
+      let str, substr, newsubstr;
+      str = prompt("Введите строку в которой будем менять слово"," Слово для замены - Кот -");
+      substr = prompt("Введите что будем искать для замены", "Кот");
+      newsubstr = prompt("Введите на что заменить", "Cat");
+
+      if (!str.includes("Кот")) {
+        console.log("Данного слова нет в строке");
+      } else {
+        str = str.replace(substr, newsubstr);
+        alert(str);
+      }
+      
+    </script>
+  </body>
+</html>

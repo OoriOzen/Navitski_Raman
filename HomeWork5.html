@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+
+  <script> 
+  
+/*5. Напишите программу, в которой пользователь с клавиатуры вводит два числа. 
+А программа сравнивает два введенных числа и выводит на консоль результат сравнения 
+(два числа равны, первое число больше второго или первое число меньше второго).
+  */
+
+let ch1,ch2,ch3;
+ ch1 = +prompt('Введите первое число (a) =', 2); 
+ ch2 = +prompt('Введите второе число (b) =', 4); 
+ ch1 = ch1 - ch2;
+ //ch3 = ch1-ch2;
+// console.log(ch3);
+console.log(ch1>0);
+console.log(ch1<0);
+console.log(ch1==0);
+switch (true) {
+    case ch1>0 :
+    console.log("Первое число больше");
+    break;
+    case ch1<0 :
+    console.log("Второе число больше");
+    break;
+    case ch1==0:
+    console.log("Числа равны");
+    break;
+    default :
+    console.log("Вводите только числа");
+
+}
+
+  </script>
+
+
+</body>
+
+</html>
