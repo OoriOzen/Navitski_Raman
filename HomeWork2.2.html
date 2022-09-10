@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+            /* Через сколько лет 100$ в банке превратятся в 200$. 
+            Годовой процент равен 2%. (while/do while) */
+
+        let sum = 100;
+      	let i = 0;
+
+      while (sum < 200) {
+      	 sum += (sum*0.02); // с капитализацией
+          i++;
+          document.write(sum + "<br>" );
+      }
+      	alert('Years ='  + i);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      /*Найти: 
+среднее арифметическое всех натуральных чисел от a до 200 
+(значение a вводится с клавиатуры; a <= 200)
+             */
+
+      let SrArifm = 0;
+      let end = +prompt(" Введите число до 200", 7);
+      i = 0;
+      if (end % 1 == 0) {
+      if (end < 0 || end > 200) {
+        alert("Введено число вне заданного диапазона");
+      } else {
+        while (end <= 200) {
+          SrArifm += end;
+          end++;
+          i++;
+        }
+        SrArifm = SrArifm / i;
+        alert("SrArifm =" + SrArifm);
+      }
+    } else {
+        alert("Chislo ne naturalnoe");
+    }
+    </script>
+  </body>
+</html>

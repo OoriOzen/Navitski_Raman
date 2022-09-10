@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      /*Найти: 
+сумму квадратов всех натуральных чисел от a до b 
+](значения a и b вводятся с клавиатуры; b >= a).
+             */
+
+      let Summ = 0;
+      let a = +prompt(" Введите начало диапазона", 7);
+      let b = +prompt(" Введите конец диапазона", 17);
+
+      if (a > b) {
+        alert("Неверный диапазон");
+      } else {
+        while (a <= b) {
+          Summ += a**2;
+          a++;
+        }
+       
+        alert("Summa =" + Summ);
+      }
+    </script>
+  </body>
+</html>
